@@ -1281,8 +1281,6 @@
     .feature-list li::before { content: "▸ "; color: #fff; font-weight: 700; }
     .tags { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 1.25rem; }
     .tag { font-size: 0.72rem; font-family: var(--font-display); letter-spacing: 0.04em; padding: 0.35rem 0.65rem; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
-    .collab-card { max-width: 36rem; padding: 1.75rem; border: 1px solid var(--border); border-radius: 16px; background: linear-gradient(165deg, #141414, #0c0c0c); box-shadow: var(--shadow-lg); }
-    .collab-card a.mail { color: #fff; font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.35); }
     .hero__brand-line { font-family: var(--font-display); font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin: 0 0 0.75rem; }
     .fab-yt { background: linear-gradient(180deg, #ff0033, #b00020) !important; box-shadow: 0 8px 36px rgba(255, 0, 51, 0.45) !important; animation: none !important; }
   </style>
@@ -1309,7 +1307,6 @@
         <a href="#angles">angles</a>
         <a href="#content">content</a>
         <a href="#youtube">youtube</a>
-        <a href="#collab">collab</a>
       </nav>
     </div>
     <a class="top__cta" id="link-cta-top" href="https://www.youtube.com/@Blackhearsefpv" target="_blank" rel="noopener noreferrer">watch on YouTube</a>
@@ -1455,25 +1452,6 @@
     </div>
   </section>
 
-  <section id="collab">
-    <div class="wrap">
-      <header class="section-head reveal">
-        <p class="section-eyebrow">// collab/</p>
-        <h2 class="section-title">Collaboration</h2>
-        <p class="section-sub">For collabs and project proposals — email us.</p>
-      </header>
-      <div class="collab-card reveal">
-        <p class="section-eyebrow" style="margin-bottom:0.75rem;">E-mail</p>
-        <p style="margin:0 0 1rem;font-size:1.15rem;"><a class="mail" id="link-mail" href="mailto:your@email.com">your@email.com</a></p>
-        <p style="margin:0;color:var(--muted);font-size:0.95rem;">Replace this with a working email when ready.</p>
-        <div style="margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:0.6rem;">
-          <a class="btn btn--yt" id="link-yt-contact" href="https://www.youtube.com/@Blackhearsefpv" target="_blank" rel="noopener noreferrer">YouTube</a>
-          <a class="btn btn--primary" href="mailto:your@email.com">Send email</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer id="footer">
     <strong>BLACK URBAN FPV</strong>
     <span class="comment">//</span> FPV drone · cinematic footage · abandoned — urban exploration<br />
@@ -1489,17 +1467,14 @@
     (function () {
       'use strict';
       var CONFIG = {
-        youtube: 'https://www.youtube.com/@Blackhearsefpv',
-        email: 'mailto:your@email.com'
+        youtube: 'https://www.youtube.com/@Blackhearsefpv'
       };
       var linkMap = {
         'link-yt-hero': CONFIG.youtube,
         'link-yt-player': CONFIG.youtube,
-        'link-yt-contact': CONFIG.youtube,
         'link-yt-footer': CONFIG.youtube,
         'link-cta-top': CONFIG.youtube,
-        'fab-yt': CONFIG.youtube,
-        'link-mail': CONFIG.email
+        'fab-yt': CONFIG.youtube
       };
       Object.keys(linkMap).forEach(function (id) {
         var el = document.getElementById(id);
@@ -1516,7 +1491,7 @@
       }
 
       var navLinks = document.querySelectorAll('.top__nav a');
-      var sections = ['about', 'angles', 'content', 'youtube', 'collab'].map(function (id) {
+      var sections = ['about', 'angles', 'content', 'youtube'].map(function (id) {
         return document.getElementById(id);
       }).filter(Boolean);
       function updateNav() {
