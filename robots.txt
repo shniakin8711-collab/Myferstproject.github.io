@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://shniakin8711-collab.github.io/Myferstproject.github.io/sitemap.xml
