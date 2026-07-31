@@ -856,10 +856,10 @@
     /* YouTube player */
     .yt-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1.25rem;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1100px) {
       .yt-grid {
         grid-template-columns: 1fr;
       }
@@ -1513,6 +1513,24 @@
           </div>
           <div class="yt-player__bar">
             <span>ролик: <strong>Angel Granit</strong></span>
+            <div class="yt-player__actions">
+              <a class="btn btn--yt" href="https://www.youtube.com/@blackurbanfpv" target="_blank" rel="noopener noreferrer">Открыть канал</a>
+            </div>
+          </div>
+        </div>
+        <div class="yt-player">
+          <div class="yt-player__frame">
+            <iframe
+              src="https://www.youtube.com/embed/mmVXZMJHN8A?rel=0"
+              title="BLACK URBAN FPV — fpv cinematic"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+          <div class="yt-player__bar">
+            <span>ролик: <strong>fpv cinematic</strong></span>
             <div class="yt-player__actions">
               <a class="btn btn--yt" href="https://www.youtube.com/@blackurbanfpv" target="_blank" rel="noopener noreferrer">Открыть канал</a>
             </div>
