@@ -118,32 +118,22 @@
       },
       {
         "@type": "VideoObject",
+        "name": "Свято-Казанский собор — Black Urban FPV",
+        "description": "FPV-ролик Свято-Казанский собор на канале Black Urban FPV",
+        "thumbnailUrl": "https://i.ytimg.com/vi/vUQhJJHAJbI/hqdefault.jpg",
+        "uploadDate": "2026-08-01",
+        "embedUrl": "https://www.youtube.com/embed/vUQhJJHAJbI",
+        "contentUrl": "https://www.youtube.com/watch?v=vUQhJJHAJbI",
+        "publisher": { "@id": "https://shniakin8711-collab.github.io/Myferstproject.github.io/#business" }
+      },
+      {
+        "@type": "VideoObject",
         "name": "Cafe Rosha — Black Urban FPV",
         "description": "FPV-ролик Cafe Rosha на канале Black Urban FPV",
         "thumbnailUrl": "https://i.ytimg.com/vi/lZQHC3cBYxE/hqdefault.jpg",
         "uploadDate": "2026-01-01",
         "embedUrl": "https://www.youtube.com/embed/lZQHC3cBYxE",
         "contentUrl": "https://www.youtube.com/watch?v=lZQHC3cBYxE",
-        "publisher": { "@id": "https://shniakin8711-collab.github.io/Myferstproject.github.io/#business" }
-      },
-      {
-        "@type": "VideoObject",
-        "name": "Angel Granit — Black Urban FPV",
-        "description": "FPV-ролик Angel Granit на канале Black Urban FPV",
-        "thumbnailUrl": "https://i.ytimg.com/vi/sryWmrJC0z4/hqdefault.jpg",
-        "uploadDate": "2026-01-01",
-        "embedUrl": "https://www.youtube.com/embed/sryWmrJC0z4",
-        "contentUrl": "https://www.youtube.com/watch?v=sryWmrJC0z4",
-        "publisher": { "@id": "https://shniakin8711-collab.github.io/Myferstproject.github.io/#business" }
-      },
-      {
-        "@type": "VideoObject",
-        "name": "fpv cinematic — Black Urban FPV",
-        "description": "Кинематографичный FPV-ролик студии Black Urban FPV",
-        "thumbnailUrl": "https://i.ytimg.com/vi/mmVXZMJHN8A/hqdefault.jpg",
-        "uploadDate": "2026-01-01",
-        "embedUrl": "https://www.youtube.com/embed/mmVXZMJHN8A",
-        "contentUrl": "https://www.youtube.com/watch?v=mmVXZMJHN8A",
         "publisher": { "@id": "https://shniakin8711-collab.github.io/Myferstproject.github.io/#business" }
       }
     ]
@@ -972,10 +962,10 @@
     /* YouTube player */
     .yt-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1.25rem;
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 900px) {
       .yt-grid {
         grid-template-columns: 1fr;
       }
@@ -1610,6 +1600,24 @@
         <div class="yt-player">
           <div class="yt-player__frame">
             <iframe
+              src="https://www.youtube.com/embed/vUQhJJHAJbI?rel=0"
+              title="BLACK URBAN FPV — Свято-Казанский собор"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+          <div class="yt-player__bar">
+            <span>ролик: <strong>Свято-Казанский собор</strong></span>
+            <div class="yt-player__actions">
+              <a class="btn btn--yt" id="link-yt-player" href="https://www.youtube.com/@blackurbanfpv" target="_blank" rel="noopener noreferrer">Открыть канал</a>
+            </div>
+          </div>
+        </div>
+        <div class="yt-player">
+          <div class="yt-player__frame">
+            <iframe
               src="https://www.youtube.com/embed/lZQHC3cBYxE?rel=0"
               title="BLACK URBAN FPV — Cafe Rosha"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1620,42 +1628,6 @@
           </div>
           <div class="yt-player__bar">
             <span>ролик: <strong>Cafe Rosha</strong></span>
-            <div class="yt-player__actions">
-              <a class="btn btn--yt" id="link-yt-player" href="https://www.youtube.com/@blackurbanfpv" target="_blank" rel="noopener noreferrer">Открыть канал</a>
-            </div>
-          </div>
-        </div>
-        <div class="yt-player">
-          <div class="yt-player__frame">
-            <iframe
-              src="https://www.youtube.com/embed/sryWmrJC0z4?rel=0"
-              title="BLACK URBAN FPV — Angel Granit"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
-          <div class="yt-player__bar">
-            <span>ролик: <strong>Angel Granit</strong></span>
-            <div class="yt-player__actions">
-              <a class="btn btn--yt" href="https://www.youtube.com/@blackurbanfpv" target="_blank" rel="noopener noreferrer">Открыть канал</a>
-            </div>
-          </div>
-        </div>
-        <div class="yt-player">
-          <div class="yt-player__frame">
-            <iframe
-              src="https://www.youtube.com/embed/mmVXZMJHN8A?rel=0"
-              title="BLACK URBAN FPV — fpv cinematic"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </div>
-          <div class="yt-player__bar">
-            <span>ролик: <strong>fpv cinematic</strong></span>
             <div class="yt-player__actions">
               <a class="btn btn--yt" href="https://www.youtube.com/@blackurbanfpv" target="_blank" rel="noopener noreferrer">Открыть канал</a>
             </div>
