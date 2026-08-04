@@ -121,6 +121,16 @@
       },
       {
         "@type": "VideoObject",
+        "name": "СТО BMS Servise — Black Urban FPV",
+        "description": "FPV-ролик СТО BMS Servise на канале Black Urban FPV",
+        "thumbnailUrl": "https://i.ytimg.com/vi/rQzrjPlW55A/hqdefault.jpg",
+        "uploadDate": "2026-08-04",
+        "embedUrl": "https://www.youtube.com/embed/rQzrjPlW55A",
+        "contentUrl": "https://www.youtube.com/watch?v=rQzrjPlW55A",
+        "publisher": { "@id": "https://shniakin8711-collab.github.io/Myferstproject.github.io/#business" }
+      },
+      {
+        "@type": "VideoObject",
         "name": "Свято-Казанский собор — Black Urban FPV",
         "description": "FPV-ролик Свято-Казанский собор на канале Black Urban FPV",
         "thumbnailUrl": "https://i.ytimg.com/vi/vUQhJJHAJbI/hqdefault.jpg",
@@ -141,7 +151,7 @@
       }
     ]
   }
-  </script>  </script>
+  </script>
 
   <style>
     :root {
@@ -965,10 +975,10 @@
     /* YouTube player */
     .yt-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1.25rem;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1100px) {
       .yt-grid {
         grid-template-columns: 1fr;
       }
@@ -1634,6 +1644,24 @@
         <div class="yt-player">
           <div class="yt-player__frame">
             <iframe
+              src="https://www.youtube.com/embed/rQzrjPlW55A?rel=0"
+              title="BLACK URBAN FPV — СТО BMS Servise"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+          <div class="yt-player__bar">
+            <span>ролик: <strong>СТО BMS Servise</strong></span>
+            <div class="yt-player__actions">
+              <a class="btn btn--yt" id="link-yt-player" href="https://www.youtube.com/@blackurbanfpv" target="_blank" rel="noopener noreferrer">Открыть канал</a>
+            </div>
+          </div>
+        </div>
+        <div class="yt-player">
+          <div class="yt-player__frame">
+            <iframe
               src="https://www.youtube.com/embed/vUQhJJHAJbI?rel=0"
               title="BLACK URBAN FPV — Свято-Казанский собор"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1645,7 +1673,7 @@
           <div class="yt-player__bar">
             <span>ролик: <strong>Свято-Казанский собор</strong></span>
             <div class="yt-player__actions">
-              <a class="btn btn--yt" id="link-yt-player" href="https://www.youtube.com/@blackurbanfpv" target="_blank" rel="noopener noreferrer">Открыть канал</a>
+              <a class="btn btn--yt" href="https://www.youtube.com/@blackurbanfpv" target="_blank" rel="noopener noreferrer">Открыть канал</a>
             </div>
           </div>
         </div>
