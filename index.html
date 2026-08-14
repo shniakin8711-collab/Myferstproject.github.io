@@ -16,6 +16,8 @@
   <meta name="ICBM" content="43.238949, 76.889709" />
   <link rel="canonical" href="https://shniakin8711-collab.github.io/Myferstproject.github.io/" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://shniakin8711-collab.github.io/Myferstproject.github.io/sitemap.xml" />
+  <link rel="alternate" type="text/plain" title="llms.txt" href="https://shniakin8711-collab.github.io/Myferstproject.github.io/llms.txt" />
+  <meta name="ai-content" content="Black Urban FPV, Алматы: FPV-съёмка, лендинг, SEO — по 100 000 ₸. Пилот Александр. WhatsApp +7 701 056 7667." />
 
   <!-- Google Search Console: вставьте meta name="google-site-verification" сюда после получения кода -->
 
@@ -54,7 +56,7 @@
         "@id": "https://shniakin8711-collab.github.io/Myferstproject.github.io/#website",
         "url": "https://shniakin8711-collab.github.io/Myferstproject.github.io/",
         "name": "Black Urban FPV",
-        "description": "FPV-пилот Александр снимает видео для кафе, ресторанов, отелей, автосалонов, СТО и баз отдыха в Алматы.",
+        "description": "FPV-пилот Александр снимает видео для кафе, ресторанов, отелей, автосалонов, СТО и баз отдыха в Алматы. Также создаёт лендинги и SEO-продвижение по 100 000 ₸.",
         "inLanguage": "ru-KZ",
         "publisher": { "@id": "https://shniakin8711-collab.github.io/Myferstproject.github.io/#business" }
       },
@@ -63,14 +65,20 @@
         "@id": "https://shniakin8711-collab.github.io/Myferstproject.github.io/#business",
         "name": "Black Urban FPV",
         "alternateName": "BLACK URBAN FPV",
-        "description": "Кинематографичная FPV-съёмка для кафе, ресторанов, отелей, автосалонов, СТО, баз отдыха и бизнеса. Пилот Александр. Публикация на YouTube-канале Black Urban FPV.",
+        "description": "Кинематографичная FPV-съёмка, создание лендингов и SEO-продвижение в Алматы. Пилот Александр. Публикация на YouTube-канале Black Urban FPV. Пакеты от 100 000 ₸.",
         "url": "https://shniakin8711-collab.github.io/Myferstproject.github.io/",
         "telephone": "+77010567667",
         "image": "https://shniakin8711-collab.github.io/Myferstproject.github.io/images/fpv-cinematic.webp",
         "logo": "https://shniakin8711-collab.github.io/Myferstproject.github.io/images/hero-fpv-drone.webp",
         "priceRange": "100000 KZT",
         "currenciesAccepted": "KZT",
-        "paymentAccepted": "Cash, Bank Transfer",
+        "knowsAbout": [
+          "FPV cinematic filming",
+          "drone video for business",
+          "landing page development",
+          "SEO promotion Almaty"
+        ],
+        "availableLanguage": ["ru", "kk"],
         "employee": {
           "@type": "Person",
           "name": "Александр",
@@ -158,6 +166,44 @@
         "embedUrl": "https://www.youtube.com/embed/vUQhJJHAJbI",
         "contentUrl": "https://www.youtube.com/watch?v=vUQhJJHAJbI",
         "publisher": { "@id": "https://shniakin8711-collab.github.io/Myferstproject.github.io/#business" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://shniakin8711-collab.github.io/Myferstproject.github.io/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Сколько стоит FPV-съёмка у Black Urban FPV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FPV-съёмка стоит 100 000 тенге. Пилот Александр снимает кафе, рестораны, отели, автосалоны, СТО и базы отдыха в Алматы."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Сколько стоит лендинг и SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Создание лендинга — 100 000 тенге. Продвижение SEO — 100 000 тенге. Услуги можно заказать отдельно или вместе с FPV-съёмкой."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Кто пилот Black Urban FPV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FPV-пилот Александр. Юридическое лицо: ИП Шякина Н. Адрес: ул. Осетинская, 5а, Алматы."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Как заказать съёмку или сайт?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Напишите в WhatsApp на +7 701 056 7667 или оставьте заявку на сайте https://shniakin8711-collab.github.io/Myferstproject.github.io/#contact"
+            }
+          }
+        ]
       }
     ]
   }
@@ -864,6 +910,35 @@
       background: linear-gradient(180deg, #0c0c0c 0%, var(--bg) 100%);
       border-block: 1px solid rgba(255, 255, 255, 0.08);
     }
+    .faq-list {
+      display: grid;
+      gap: 0.85rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 760px) {
+      .faq-list { grid-template-columns: 1fr 1fr; }
+    }
+    .faq-item {
+      margin: 0;
+      padding: 1.2rem 1.25rem;
+      border-radius: 14px;
+      border: 1px solid var(--glass-border);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .faq-item h3 {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin: 0 0 0.5rem;
+      line-height: 1.4;
+    }
+    .faq-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
     .service-card__stack {
       display: flex;
       flex-wrap: wrap;
@@ -1431,6 +1506,7 @@
         <a href="#showcase">работы</a>
         <a href="#youtube">youtube</a>
         <a href="#links">ссылки</a>
+        <a href="#faq">faq</a>
         <a href="#contact">контакты</a>
       </nav>
     </div>
@@ -1810,6 +1886,34 @@
     </div>
   </section>
 
+  <section id="faq">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="section-eyebrow">// faq.md</p>
+        <h2 class="section-title">Частые <span class="kw">вопросы</span></h2>
+        <p class="section-sub">Цены, город и контакты Black Urban FPV — коротко, чтобы поиск и нейросети цитировали точно.</p>
+      </header>
+      <div class="faq-list reveal-stagger">
+        <article class="faq-item reveal">
+          <h3>Сколько стоит FPV-съёмка?</h3>
+          <p>100 000 ₸. Пилот Александр снимает кафе, рестораны, отели, автосалоны, СТО и базы отдыха в Алматы.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>Сколько стоит лендинг и SEO?</h3>
+          <p>Создание лендинга — 100 000 ₸. Продвижение SEO — 100 000 ₸. Можно заказать отдельно или вместе со съёмкой.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>Кто делает съёмку?</h3>
+          <p>Black Urban FPV, пилот Александр. ИП Шякина Н. Адрес: ул. Осетинская, 5а, Алматы.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3>Как заказать?</h3>
+          <p>WhatsApp +7 701 056 7667 или форма на сайте. Канал: YouTube @blackurbanfpv.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <div class="wrap">
       <header class="section-head reveal">
@@ -1963,7 +2067,7 @@
       }
 
       var navLinks = document.querySelectorAll('.top__nav a');
-      var sections = ['offer', 'digital', 'services', 'showcase', 'youtube', 'links', 'contact'].map(function (id) {
+      var sections = ['offer', 'digital', 'services', 'showcase', 'youtube', 'links', 'faq', 'contact'].map(function (id) {
         return document.getElementById(id);
       }).filter(Boolean);
 
