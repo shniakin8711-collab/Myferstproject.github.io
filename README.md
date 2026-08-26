@@ -1,4 +1,4 @@
-﻿# ENERGY TRAVEL
+﻿# Tour for You by ENERGY TRAVEL
 
 Турагентство в Алматы. Сайт на GitHub Pages.
 
