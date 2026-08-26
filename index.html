@@ -716,12 +716,23 @@
     @media (min-width: 880px) {
       .contact { grid-template-columns: 0.95fr 1.05fr; align-items: start; }
     }
-    .contact-card {
-      background: #fff;
-      border-radius: 14px;
-      padding: 1.5rem;
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
+    .contact-brand {
+      margin: 0 0 0.5rem;
+      font-family: var(--display);
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--navy);
+      line-height: 0.95;
+    }
+    .contact-brand-sub {
+      margin: 0 0 0.75rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
     .contact-card h3 {
       margin: 0 0 0.25rem;
@@ -1183,7 +1194,8 @@
   <section id="contact">
     <div class="wrap">
       <p class="section-eyebrow reveal">Контакты</p>
-      <h2 class="section-title reveal">Tour for You by ENERGY TRAVEL · Татьяна</h2>
+      <p class="contact-brand reveal">ENERGY TRAVEL</p>
+      <p class="contact-brand-sub reveal">Tour for You · Татьяна</p>
       <p class="section-sub reveal">Позвоните, напишите в WhatsApp или оставьте заявку.</p>
       <div class="contact">
         <div class="contact-card reveal">
