@@ -1,4 +1,4 @@
-﻿# ENERGI TRAVEL
+﻿# ENERGY TRAVEL
 
 Турагентство в Алматы. Сайт на GitHub Pages.
 
