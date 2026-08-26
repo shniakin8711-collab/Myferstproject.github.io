@@ -12,8 +12,8 @@
   <meta name="theme-color" content="#0B1F3A" />
   <meta name="geo.region" content="KZ-ALA" />
   <meta name="geo.placename" content="Алматы" />
-  <meta name="geo.position" content="43.238949;76.889709" />
-  <meta name="ICBM" content="43.238949, 76.889709" />
+  <meta name="geo.position" content="43.289853;76.961158" />
+  <meta name="ICBM" content="43.289853, 76.961158" />
   <link rel="canonical" href="https://shniakin8711-collab.github.io/Myferstproject.github.io/" />
   <link rel="alternate" hreflang="ru-KZ" href="https://shniakin8711-collab.github.io/Myferstproject.github.io/" />
   <link rel="alternate" hreflang="ru" href="https://shniakin8711-collab.github.io/Myferstproject.github.io/" />
@@ -92,8 +92,8 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 43.238949,
-          "longitude": 76.889709
+          "latitude": 43.289853,
+          "longitude": 76.961158
         },
         "areaServed": [
           { "@type": "City", "name": "Алматы" },
@@ -729,6 +729,47 @@
     .contact-list a:hover { color: var(--gold-dark); }
     .contact-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; }
 
+    .map-block {
+      margin-top: 1.25rem;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+    .map-block__head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.95rem 1.15rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .map-block__head h3 {
+      margin: 0;
+      font-family: var(--display);
+      font-size: 1.1rem;
+      color: var(--navy);
+    }
+    .map-block__head p {
+      margin: 0.2rem 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    #map-2gis {
+      width: 100%;
+      height: min(420px, 58vw);
+      min-height: 280px;
+    }
+    .map-fallback {
+      display: none;
+      padding: 1.25rem;
+      text-align: center;
+      color: var(--muted);
+    }
+    .map-fallback.is-visible { display: block; }
+
     .form-card {
       background: #fff;
       border-radius: 14px;
@@ -1128,7 +1169,7 @@
           <div class="contact-actions">
             <a class="btn btn--gold" id="link-wa-contact" href="https://wa.me/77017575223" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             <a class="btn btn--navy" href="tel:+77017575223">Позвонить</a>
-            <a class="btn btn--outline" id="link-2gis" href="https://2gis.kz/almaty/search/%D1%83%D0%BB.%20%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%2C%205%D0%B0" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>
+            <a class="btn btn--outline" id="link-2gis" href="https://2gis.kz/almaty?m=76.961158%2C43.289853%2F17" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>
           </div>
         </div>
 
@@ -1163,6 +1204,21 @@
           </form>
         </div>
       </div>
+
+      <div class="map-block reveal" id="map">
+        <div class="map-block__head">
+          <div>
+            <h3>Мы на карте 2ГИС</h3>
+            <p>ул. Осетинская, 5а · Жетысуский район, Алматы</p>
+          </div>
+          <a class="btn btn--navy btn--sm" id="link-2gis-map" href="https://2gis.kz/almaty?m=76.961158%2C43.289853%2F17" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>
+        </div>
+        <div id="map-2gis" role="region" aria-label="Карта 2ГИС — ENERGY TRAVEL, ул. Осетинская, 5а"></div>
+        <p class="map-fallback" id="map-fallback">
+          Карта временно недоступна.
+          <a id="link-2gis-fallback" href="https://2gis.kz/almaty?m=76.961158%2C43.289853%2F17" target="_blank" rel="noopener noreferrer">Открыть адрес в 2ГИС</a>
+        </p>
+      </div>
     </div>
   </section>
 
@@ -1170,7 +1226,7 @@
     <strong>ENERGY TRAVEL</strong> · Татьяна ·
     <a href="tel:+77017575223">+7 701 757 52 23</a> ·
     ул. Осетинская, 5а ·
-    <a id="link-2gis-footer" href="https://2gis.kz/almaty/search/%D1%83%D0%BB.%20%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%2C%205%D0%B0" target="_blank" rel="noopener noreferrer">2ГИС</a>
+    <a id="link-2gis-footer" href="https://2gis.kz/almaty?m=76.961158%2C43.289853%2F17" target="_blank" rel="noopener noreferrer">2ГИС</a>
   </footer>
 
   <a class="fab-wa" id="fab-wa" href="https://wa.me/77017575223" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">
@@ -1178,6 +1234,7 @@
   </a>
   <button type="button" class="to-top" id="to-top" aria-label="Наверх">↑</button>
 
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
   <script>
     (function () {
       'use strict';
@@ -1185,7 +1242,9 @@
         phoneTel: '+77017575223',
         waPhone: '77017575223',
         waMessage: 'Здравствуйте, Татьяна! Хочу подобрать тур в ENERGY TRAVEL.',
-        gis: 'https://2gis.kz/almaty/search/%D1%83%D0%BB.%20%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%2C%205%D0%B0'
+        gis: 'https://2gis.kz/almaty?m=76.961158%2C43.289853%2F17',
+        lat: 43.289853,
+        lon: 76.961158
       };
       CONFIG.whatsapp = 'https://wa.me/' + CONFIG.waPhone + '?text=' + encodeURIComponent(CONFIG.waMessage);
 
@@ -1193,7 +1252,7 @@
         var el = document.getElementById(id);
         if (el) el.href = CONFIG.whatsapp;
       });
-      ['link-2gis', 'link-2gis-footer'].forEach(function (id) {
+      ['link-2gis', 'link-2gis-footer', 'link-2gis-map', 'link-2gis-fallback'].forEach(function (id) {
         var el = document.getElementById(id);
         if (el) el.href = CONFIG.gis;
       });
@@ -1302,6 +1361,37 @@
           if (statusEl) statusEl.textContent = 'Открываем WhatsApp…';
           window.open('https://wa.me/' + CONFIG.waPhone + '?text=' + encodeURIComponent(buildContactMessage()), '_blank', 'noopener,noreferrer');
         });
+      }
+
+      function showMapFallback() {
+        var fallback = document.getElementById('map-fallback');
+        if (fallback) fallback.classList.add('is-visible');
+      }
+
+      if (typeof DG !== 'undefined' && DG.then) {
+        var mapReady = false;
+        setTimeout(function () {
+          if (!mapReady) showMapFallback();
+        }, 8000);
+        DG.then(function () {
+          try {
+            var map = DG.map('map-2gis', {
+              center: [CONFIG.lat, CONFIG.lon],
+              zoom: 17,
+              fullscreenControl: true,
+              scrollWheelZoom: false
+            });
+            DG.marker([CONFIG.lat, CONFIG.lon])
+              .addTo(map)
+              .bindPopup('<strong>ENERGY TRAVEL</strong><br>ул. Осетинская, 5а<br>Татьяна · +7 701 757 52 23')
+              .openPopup();
+            mapReady = true;
+          } catch (err) {
+            showMapFallback();
+          }
+        });
+      } else {
+        showMapFallback();
       }
     })();
   </script>
