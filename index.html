@@ -606,41 +606,52 @@
     }
     .country__meta p { margin: 0; opacity: 0.85; font-size: 0.92rem; }
 
-    /* Gallery */
+    /* Gallery — neat equal tiles */
     .mosaic {
       display: grid;
-      gap: 0.85rem;
-      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      grid-template-columns: 1fr;
     }
-    @media (min-width: 860px) {
-      .mosaic { grid-template-columns: repeat(3, 1fr); }
-      .mosaic figure:first-child { grid-column: span 2; }
+    @media (min-width: 560px) {
+      .mosaic { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 900px) {
+      .mosaic { grid-template-columns: repeat(3, 1fr); gap: 1.15rem; }
     }
     .mosaic figure {
       margin: 0;
       position: relative;
-      border-radius: 12px;
+      border-radius: 14px;
       overflow: hidden;
       aspect-ratio: 4 / 3;
       background: var(--fog-2);
+      box-shadow: 0 10px 28px rgba(11, 31, 58, 0.08);
+      border: 1px solid var(--line);
     }
     .mosaic img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.6s var(--ease);
+      object-position: center;
+      display: block;
+      transition: transform 0.55s var(--ease);
     }
-    .mosaic figure:hover img { transform: scale(1.05); }
+    .mosaic figure:hover img { transform: scale(1.04); }
     .mosaic figcaption {
       position: absolute;
-      left: 0.75rem;
-      bottom: 0.7rem;
-      padding: 0.3rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(11, 31, 58, 0.78);
+      left: 0.85rem;
+      right: 0.85rem;
+      bottom: 0.85rem;
+      width: auto;
+      padding: 0.45rem 0.8rem;
+      border-radius: 8px;
+      background: rgba(11, 31, 58, 0.82);
       color: #fff;
-      font-size: 0.78rem;
-      font-weight: 600;
+      font-size: 0.82rem;
+      font-weight: 650;
+      letter-spacing: 0.02em;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
     }
 
     /* Steps */
@@ -1135,7 +1146,7 @@
       <p class="section-sub reveal">Покажем уровень отеля и характер пляжа до брони — стоимость рассчитаем под ваши даты.</p>
       <div class="mosaic">
         <figure class="reveal">
-          <img src="images/hotel-pool.webp" alt="Бассейн отеля — Tour for You by ENERGY TRAVEL Алматы" width="1200" height="900" loading="lazy" decoding="async" />
+          <img src="images/hotel-pool.webp" alt="Бассейн отеля — Tour for You by ENERGY TRAVEL" width="1200" height="900" loading="lazy" decoding="async" />
           <figcaption>Бассейн у моря</figcaption>
         </figure>
         <figure class="reveal">
@@ -1145,6 +1156,10 @@
         <figure class="reveal">
           <img src="images/hotel-room.webp" alt="Номер отеля — Tour for You by ENERGY TRAVEL" width="1200" height="900" loading="lazy" decoding="async" />
           <figcaption>Номер</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="images/hotel-lobby.webp" alt="Лобби отеля — Tour for You by ENERGY TRAVEL" width="1200" height="900" loading="lazy" decoding="async" />
+          <figcaption>Лобби</figcaption>
         </figure>
         <figure class="reveal">
           <img src="images/beach-turquoise.webp" alt="Бирюзовый пляж — Tour for You by ENERGY TRAVEL" width="1200" height="900" loading="lazy" decoding="async" />
