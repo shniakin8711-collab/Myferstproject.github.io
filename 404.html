@@ -17,7 +17,16 @@
       text-align: center;
       padding: 2rem;
     }
-    h1 { font-size: 1.5rem; margin: 0 0 0.75rem; }
+    .brand-line {
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+    .brand-line--sm { font-size: 1rem; opacity: 0.9; }
+    .brand-line--lg { font-size: clamp(1.6rem, 6vw, 2.4rem); margin-bottom: 1rem; }
+    h1 { font-size: 1.35rem; margin: 0 0 0.75rem; }
     p { color: rgba(255,255,255,0.7); margin: 0 0 1.5rem; }
     a {
       display: inline-block;
@@ -32,8 +41,10 @@
 </head>
 <body>
   <div>
+    <p class="brand-line brand-line--sm">Tour for You by</p>
+    <p class="brand-line brand-line--lg">ENERGY TRAVEL</p>
     <h1>Страница не найдена</h1>
-    <p>Вернитесь на главную Tour for You by ENERGY TRAVEL.</p>
+    <p>Вернитесь на главную.</p>
     <a href="https://shniakin8711-collab.github.io/Myferstproject.github.io/">Открыть главную</a>
   </div>
 </body>

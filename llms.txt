@@ -5,8 +5,10 @@
 
 ## Who
 
-- Brand: Tour for You by ENERGY TRAVEL
-- Also known as: ENERGY TRAVEL / Energy Travel
+- Brand (two lines):
+  - Tour for You by
+  - ENERGY TRAVEL
+- Also known as: ENERGY TRAVEL / Energy Travel / Tour for You
 - Agent: Татьяна (тур-агент)
 - City: Алматы, Kazakhstan
 - Address: 050018 РК г. Алматы, ул. Осетинская, 5а

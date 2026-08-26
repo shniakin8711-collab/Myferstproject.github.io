@@ -251,24 +251,22 @@
       flex: 0 0 auto;
       color: var(--gold);
     }
-    .brand__text { display: grid; line-height: 1.1; }
+    .brand__text { display: grid; line-height: 1.05; gap: 0.05rem; }
     .brand__name {
       font-family: var(--display);
       font-weight: 800;
-      font-size: clamp(1.05rem, 2.4vw, 1.35rem);
-      letter-spacing: 0.08em;
+      font-size: clamp(0.78rem, 1.8vw, 0.95rem);
+      letter-spacing: 0.06em;
       color: var(--navy);
       text-transform: uppercase;
     }
     .brand__sub {
-      font-size: 0.68rem;
-      color: var(--gold-dark);
+      font-family: var(--display);
+      font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+      color: var(--navy);
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      font-weight: 700;
-    }
-    .top:not(.top--solid) .brand__name {
-      color: var(--navy);
+      font-weight: 800;
     }
     .top__nav {
       display: none;
@@ -398,19 +396,19 @@
       .hero__grid { grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; }
     }
     .hero__brand {
-      margin: 0 0 0.35rem;
+      margin: 0 0 0.15rem;
       font-family: var(--display);
-      font-size: clamp(1.1rem, 2.6vw, 1.45rem);
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      color: var(--gold-soft);
+      font-size: clamp(1.35rem, 3.8vw, 2.2rem);
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      color: #ffffff;
       text-transform: uppercase;
       animation: fade-up 0.9s var(--ease) both;
     }
     .hero__brand-sub {
       margin: 0 0 1rem;
       font-family: var(--display);
-      font-size: clamp(2.4rem, 8.5vw, 5.2rem);
+      font-size: clamp(2.2rem, 7.5vw, 4.6rem);
       line-height: 0.95;
       letter-spacing: 0.06em;
       text-transform: uppercase;
@@ -890,7 +888,17 @@
       font-size: 0.92rem;
     }
     .footer__brand {
-      margin: 0 0 0.65rem;
+      margin: 0 0 0.15rem;
+      font-family: var(--display);
+      font-size: clamp(1.15rem, 3vw, 1.55rem);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 1.1;
+    }
+    .footer__brand-energy {
+      margin: 0 0 0.85rem;
       font-family: var(--display);
       font-size: clamp(1.6rem, 4vw, 2.4rem);
       font-weight: 800;
@@ -974,8 +982,8 @@
           <path d="M10 40c12-3 24-10 34-20l5-1-3 6c-3 7-8 13-14 17l-5 1 3-5c2-5 5-9 5-13-9 7-18 12-25 15z" fill="currentColor"/>
         </svg>
         <span class="brand__text">
-          <span class="brand__name">ENERGY TRAVEL</span>
-          <span class="brand__sub">Tour for You</span>
+          <span class="brand__name">Tour for You by</span>
+          <span class="brand__sub">ENERGY TRAVEL</span>
         </span>
       </a>
       <nav class="top__nav" id="site-nav" aria-label="Навигация">
@@ -1001,7 +1009,7 @@
     <div class="hero__veil" aria-hidden="true"></div>
     <div class="hero__grid">
       <div>
-        <p class="hero__brand">Tour for You</p>
+        <p class="hero__brand">Tour for You by</p>
         <p class="hero__brand-sub">ENERGY TRAVEL</p>
         <h1>Подберём идеальное путешествие именно для вас</h1>
         <p class="hero__lead">Татьяна — ваш тур-агент. Отели, пляжи и курорты под даты и бюджет.</p>
@@ -1291,7 +1299,7 @@
           </div>
           <a class="btn btn--navy btn--sm" id="link-2gis-map" href="https://2gis.kz/almaty/search/%D1%83%D0%BB.%20%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%2C%205%D0%B0" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>
         </div>
-        <div id="map-2gis" role="region" aria-label="Карта — ENERGY TRAVEL, 050018 РК г. Алматы, ул. Осетинская, 5а"></div>
+        <div id="map-2gis" role="region" aria-label="Карта — Tour for You by ENERGY TRAVEL, 050018 РК г. Алматы, ул. Осетинская, 5а"></div>
         <p class="map-fallback" id="map-fallback">
           Карта временно недоступна.
           <a id="link-2gis-fallback" href="https://2gis.kz/almaty/search/%D1%83%D0%BB.%20%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%2C%205%D0%B0" target="_blank" rel="noopener noreferrer">Открыть адрес в 2ГИС</a>
@@ -1301,8 +1309,9 @@
   </section>
 
   <footer>
-    <div class="footer__brand">ENERGY TRAVEL</div>
-    <strong>Tour for You</strong> · Татьяна ·
+    <div class="footer__brand">Tour for You by</div>
+    <div class="footer__brand-energy">ENERGY TRAVEL</div>
+    Татьяна ·
     <a href="tel:+77017575223">+7 701 757 52 23</a> ·
     050018 РК г. Алматы, ул. Осетинская, 5а ·
     <a id="link-2gis-footer" href="https://2gis.kz/almaty/search/%D1%83%D0%BB.%20%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%2C%205%D0%B0" target="_blank" rel="noopener noreferrer">2ГИС</a>
@@ -1465,8 +1474,9 @@
           }).addTo(map);
 
           var popupHtml =
+            '<strong>Tour for You by</strong><br>' +
             '<strong>ENERGY TRAVEL</strong><br>' +
-            'Tour for You · Татьяна<br>' +
+            'Татьяна<br>' +
             '050018 РК г. Алматы<br>' +
             'ул. Осетинская, 5а<br>' +
             '<a href="' + CONFIG.gis + '" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС</a>';
